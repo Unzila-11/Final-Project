@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #363c47;
+            font-family: Helvetica, sans-serif;
+        }
+
+        .Top {
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 60px;
+            width: 50px;
+            border-radius: 50%;
+            padding: 2px;
+            border: 2px solid #e487ec;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li {
+            list-style: none;
+            padding: 10px;
+        }
+
+        nav ul li a {
+            color: antiquewhite;
+            text-decoration: solid;
+            font-size: 14px;
+            position: relative;
+            transition: 0.3s;
+        }
+
+        nav ul li a::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: #e487ec;
+            left: 0;
+            bottom: -5px;
+            transition: 0.3s;
+        }
+nav ul li a:hover{color: white;}
+        nav ul li a:hover::after {
+            width: 100%;
+            
+        }
+
+        .Icons {
+            margin-left: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+
+
+        .Icons a {
+            text-decoration: none;
+            color: antiquewhite;
+        }
+
+        .Icons a i {
+            font-size: 20px;
+            padding: 5px;
+        }
+
+        .Icons i:hover {
+            color: #e487ec;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 8px;
+            background-color: white;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        .container-left,
+        .container-right {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+
+        .container-left::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: white;
+            border: 4px solid #FF9F55;
+            top: 15px;
+            border-radius: 50%;
+        }
+
+        .container-right::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            left: -17px;
+            background-color: white;
+            border: 4px solid #FF9F55;
+            top: 15px;
+            border-radius: 50%;
+        }
+
+        .container-left {
+            left: 0;
+        }
+
+        .container-right {
+            left: 50%;
+        }
+
+        .container-left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            right: 30px;
+            border: medium solid white;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent white;
+        }
+
+        .container-right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            left: 30px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+
+        .content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+        }
+
+        a {
+            text-decoration-style: dotted;
+            text-decoration-thickness: 1px;
+            color: black;
+        }
+
+        a:hover {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="Top">
+        <div class="logo">
+            <img src="./logo picture.jpeg" alt="Profile picture">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">About</a></li>
+                <li><a href="./Education.html">Education</a></li>
+                <li><a href="./Skills.html">Skills</a></li>
+                <li><a href="./Experience.html">Experiences</a></li>
+                <li><a href="./Projects.html">Projects</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="Icons">
+            <a href="./Education.html"><i class="fa-solid fa-book"></i></a>
+            <a href="./Contact.html"><i class="fa-solid fa-square-phone"></i></a>
+        </div>
+    </section>
+    <section class="timeline">
+        <div class="container-left">
+            <div class="content">
+                <h2>Future Plans (2026-2032)</h2>
+                <p>I aim to pursue MBChB from the <a href="https://www.aku.edu/kenya/Pages/home.aspx">Aga Khan
+                        University, Kenya</a> and serve the underprevilaged communities
+                    around the world.</p>
+            </div>
+        </div>
+        <div class="container-right">
+            <div class="content">
+                <h2>2025-current</h2>
+                <p>After my high-school graduation in May 2025, I returned to Pakistan. During my time in Pakistan I
+                    worked on my vocational skill which include learning web development, stitching, crocheting and many
+                    more (you will find more information about this in the <a href="Skills.html">skills section</a>)</p>
+            </div>
+        </div>
+        <div class="container-left">
+            <div class="content">
+                <h2>2021-2025</h2>
+                <p>My high-school years were spent at <a href="https://www.agakhanacademies.org/maputo">Aga Khan
+                        Academy, Maputo</a>. During my time at the academy I completed IB MYP (grade 9 and 10) witha
+                    score of 46/56 and IB DP (grade 11 and 12) with a score of 38/45.</p>
+                <p>For more infromation please contact me through the <a href="Contact.html">contacts page</a>.</p>
+            </div>
+        </div>
+        <div class="container-right">
+            <div class="content">
+                <h2>2009-2021</h2>
+                <p>From my ECD (Early Childhoot Development) till grade 9, I was enrolled in the <a
+                        href="https://www.agakhanschools.org/Pakistan/AKSGDN/Index">Aga Khan School,
+                        Garden, Karachi</a>. In my grade 9 exams I scored 98.7% aggregate and 100% in Biology.
+                    Furthermore, I acheived highest score in Math in multiple grades.</p>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
